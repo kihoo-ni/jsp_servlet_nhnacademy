@@ -24,7 +24,7 @@ public class CounterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         counter++;
-
+        CounterUtils.increaseCounter(getServletContext());
         try (PrintWriter writer = resp.getWriter()) {
             writer.println("<!DOCTYPE html>");
             writer.println("<html>");
@@ -33,6 +33,7 @@ public class CounterServlet extends HttpServlet {
             writer.println("</head>");
             writer.println("<body>");
             writer.printf("<h1>%d</h1>\n", counter);
+            writer.println("<h1> counterCheck : "+getServletContext().getAttribute("counterCheck") + "</h1>");
             writer.println("</body>");
             writer.println("</html>");
         } catch (IOException ex) {

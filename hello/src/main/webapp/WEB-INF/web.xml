@@ -70,5 +70,97 @@
         <servlet-name>counterServlet</servlet-name>
         <url-pattern>/counter</url-pattern>
     </servlet-mapping>
-    
+
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>https://nhnacademy.com/</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>requestServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.ReqServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestServlet</servlet-name>
+        <url-pattern>/req</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/500.html</location>
+    </error-page>
+
+    <welcome-file-list>
+        <welcome-file>/main.html</welcome-file>
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>setCookieServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.SetCookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>setCookieServlet</servlet-name>
+        <url-pattern>/set-cookie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>readCookieServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.ReadCookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>readCookieServlet</servlet-name>
+        <url-pattern>/read-cookie</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.login.LoginServlet</servlet-class>
+
+        <init-param>
+            <param-name>id</param-name>
+            <param-value>admin</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pwd</param-name>
+            <param-value>1234</param-value>
+        </init-param>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.login.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>domainCookieServlet</servlet-name>
+        <servlet-class>com.nhnacademy.hello.DomainCookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>domainCookieServlet</servlet-name>
+        <url-pattern>/domain-cookie/*</url-pattern>
+    </servlet-mapping>
 </web-app>

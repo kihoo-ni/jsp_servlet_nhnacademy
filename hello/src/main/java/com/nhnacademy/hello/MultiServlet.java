@@ -16,7 +16,7 @@ public class MultiServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)  throws ServletException, IOException {
         req.setCharacterEncoding("utf-8");
        String[]multi=req.getParameterValues("tool");
-
+        String url = getServletContext().getInitParameter("url");
        PrintWriter out = resp.getWriter();
         resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html;charset=utf-8");
@@ -29,6 +29,7 @@ public class MultiServlet extends HttpServlet {
        out.println(",");
 
        }
+       out.printf("url: %s\n",url);
     }
 
 
