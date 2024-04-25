@@ -2,6 +2,7 @@ package com.nhnacademy.hello.login;
 
 import lombok.extern.slf4j.Slf4j;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,13 +29,13 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // session이 있으면 가져오고 없으면 null
         HttpSession session = req.getSession(false);
-        if(Objects.isNull(session) || Objects.isNull(session.getAttribute("id")) ){
+        if (Objects.isNull(session) || Objects.isNull(session.getAttribute("id"))) {
             resp.sendRedirect("/login.html");
-        }else{
+        } else {
             resp.setContentType("text/html");
             resp.setCharacterEncoding("utf-8");
 
-            try(PrintWriter out = resp.getWriter()){
+            try (PrintWriter out = resp.getWriter()) {
                 out.println("<!DOCTYPE html>");
                 out.println("<html>");
                 out.println("<head>");
@@ -50,22 +51,24 @@ public class LoginServlet extends HttpServlet {
         }
     }
 
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         String id = req.getParameter("id");
         String pwd = req.getParameter("pwd");
 
-        if(initParamId.equals(id) && initParamPwd.equals(pwd)){
+        if (initParamId.equals(id) && initParamPwd.equals(pwd)) {
             //session 있으면 가져오고 없으면 생성
             HttpSession session = req.getSession();
-            session.setAttribute("id",id);
+            session.setAttribute("id", id);
             resp.sendRedirect("/login");
-        }else{
+        } else {
             log.error("아이디/패스워드가 일치하지 않습니다.");
-            resp.sendRedirect("/login.html");
+       //    resp.sendRedirect("/login.html");
+            RequestDispatcher rd = req.getRequestDispatcher("/login.html");
+            rd.forward(req, resp);
+            log.error("id:{}", id);
         }
-
     }
 
 }
