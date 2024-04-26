@@ -3,6 +3,7 @@ package com.nhnacademy.hello;
 import org.jsoup.Jsoup;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,6 +11,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Logger;
 
+@WebServlet(
+        name = "beautifyServlet",
+        urlPatterns = "/beautify"
+)
 public class BeautifyServlet extends HttpServlet {
     private static final Logger log = Logger.getLogger(BeautifyServlet.class.getName());
 

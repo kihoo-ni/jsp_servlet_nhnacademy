@@ -9,8 +9,8 @@ public final class CounterUtils {
     }
 
     public static void increaseCounter(ServletContext servletContext) {
-        Long counter = Optional.ofNullable((Long) servletContext.getAttribute("counterCheck")).orElse(0L);
+        Long counter = Optional.ofNullable((Long) servletContext.getAttribute("counter")).orElse(0L);
         counter++;
-        servletContext.setAttribute("counterCheck", counter);
+        servletContext.setAttribute("counter", counter);
     }
 }
