@@ -2,7 +2,7 @@ package com.nhnacademy.student.listener;
 
 import com.nhnacademy.student.model.Gender;
 import com.nhnacademy.student.model.Student;
-import com.nhnacademy.student.repository.MapStudentRepository;
+import com.nhnacademy.student.repository.JsonStudentRepository;
 import com.nhnacademy.student.repository.StudentRepository;
 
 import javax.servlet.ServletContext;
@@ -17,7 +17,7 @@ public class WebApplicationListener  implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext context = sce.getServletContext();
-        StudentRepository studentRepository = new MapStudentRepository();
+        StudentRepository studentRepository = new JsonStudentRepository();
 
         for(int i=1; i<=10; i++){
             String id=Integer.toString(i);

@@ -34,6 +34,8 @@ public class StudentUpdateController implements Command {
         student.setName(request.getParameter("name"));
         student.setAge(Integer.parseInt(request.getParameter("age")));
         student.setGender(Gender.valueOf(request.getParameter("gender")));
+        log.error("Student name is " + student.getName());
+        log.error("Student Age is " + student.getAge());
 
         studentRepository.update(student);
 
