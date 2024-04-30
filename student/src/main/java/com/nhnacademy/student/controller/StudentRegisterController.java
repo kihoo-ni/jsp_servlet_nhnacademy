@@ -1,6 +1,6 @@
 package com.nhnacademy.student.controller;
 
-import com.nhnacademy.student.Command;
+import com.nhnacademy.student.controllerfactory.RequestMapping;
 import com.nhnacademy.student.model.Gender;
 import com.nhnacademy.student.model.Student;
 import com.nhnacademy.student.repository.StudentRepository;
@@ -8,6 +8,7 @@ import com.nhnacademy.student.repository.StudentRepository;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@RequestMapping(value = "/student/register.do", method = RequestMapping.Method.POST)
 public class StudentRegisterController implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {

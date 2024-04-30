@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="student:war exploded" />
@@ -9,12 +12,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fd0eb07-cbc1-44af-8fd3-1b3cf774b70d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/student.json" afterDir="false" />
+    <list default="true" id="7fd0eb07-cbc1-44af-8fd3-1b3cf774b70d" name="Changes" comment="4/29&#10;Json파일로 직렬화 연습">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/javadoc/Example01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/reflection/Autowired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/reflection/DiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/reflection/InjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/reflection/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/reflection/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/reflection/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/ArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/ArrayListTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/ArrayListTestProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/LinkedListTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/LinkedListTestProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/PerformanceTestable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/stopwatch/StopWatch1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controllerfactory/ControllerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controllerfactory/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controllerfactory/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/RequestDispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/ErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentDeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentRegisterFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentRegisterFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/listener/WebApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/listener/WebApplicationListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/repository/JsonStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/repository/JsonStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentUpdateFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentUpdateFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/controller/StudentViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/FrontServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/student/servlet/FrontServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/student.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/student.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +78,10 @@
     &quot;accountId&quot;: &quot;67c7f192-1136-4d89-b30a-f6589d4fa92a&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -76,6 +109,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.ArrayListTestMain.executor": "Run",
+    "Application.DiTest.executor": "Run",
+    "Application.LinkedListTestMain.executor": "Run",
     "Maven.student [clean].executor": "Run",
     "Maven.student [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -104,23 +140,19 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/nhnacademy/student" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/META-INF/services" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/services" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nhnacademy.student.controller" />
+      <recent name="com.nhnacademy.stopwatch" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.881" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.88" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -229,8 +261,19 @@
       <workItem from="1713319166852" duration="1399000" />
       <workItem from="1714217176803" duration="82000" />
       <workItem from="1714217269591" duration="898000" />
-      <workItem from="1714218231312" duration="37189000" />
+      <workItem from="1714218231312" duration="52656000" />
+      <workItem from="1714397995593" duration="26000" />
+      <workItem from="1714398029511" duration="5566000" />
     </task>
+    <task id="LOCAL-00001" summary="4/29&#10;Json파일로 직렬화 연습">
+      <option name="closed" value="true" />
+      <created>1714373280849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714373280849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,5 +281,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="4/29&#10;Json파일로 직렬화 연습" />
+    <option name="LAST_COMMIT_MESSAGE" value="4/29&#10;Json파일로 직렬화 연습" />
   </component>
 </project>

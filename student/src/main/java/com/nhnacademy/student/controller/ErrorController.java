@@ -1,10 +1,13 @@
 package com.nhnacademy.student.controller;
 
-import com.nhnacademy.student.Command;
+import com.nhnacademy.student.controllerfactory.RequestMapping;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@Slf4j
+@RequestMapping(value = "/student/error.do", method = RequestMapping.Method.GET)
 public class ErrorController implements Command{
 
     @Override

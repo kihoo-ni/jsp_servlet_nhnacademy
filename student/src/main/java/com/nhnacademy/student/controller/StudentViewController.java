@@ -1,6 +1,6 @@
 package com.nhnacademy.student.controller;
 
-import com.nhnacademy.student.Command;
+import com.nhnacademy.student.controllerfactory.RequestMapping;
 import com.nhnacademy.student.model.Student;
 import com.nhnacademy.student.repository.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
 
 @Slf4j
+@RequestMapping(value = "/student/view.do", method = RequestMapping.Method.GET)
 public class StudentViewController implements Command {
     private StudentRepository studentRepository;
 

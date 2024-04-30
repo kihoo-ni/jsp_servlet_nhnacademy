@@ -1,6 +1,6 @@
 package com.nhnacademy.student.controller;
 
-import com.nhnacademy.student.Command;
+import com.nhnacademy.student.controllerfactory.RequestMapping;
 import com.nhnacademy.student.model.Gender;
 import com.nhnacademy.student.model.Student;
 import com.nhnacademy.student.repository.StudentRepository;
@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @Slf4j
+@RequestMapping(value = "/student/update.do", method = RequestMapping.Method.POST)
 public class StudentUpdateController implements Command {
 
 
